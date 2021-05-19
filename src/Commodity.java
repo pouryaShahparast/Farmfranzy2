@@ -9,6 +9,10 @@ public abstract class Commodity {
         return turnsInField;
     }
 
+    public void setTurnsInField(int turnsInField) {
+        this.turnsInField = turnsInField;
+    }
+
     public int getXCoordinate() {
         return xCoordinate;
     }
@@ -20,5 +24,6 @@ public abstract class Commodity {
     public Commodity(int xCoordinate, int yCoordinate) {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
+        this.turnsInField = 0;
     }
 }
