@@ -13,6 +13,7 @@ public class Coin {
         if(coins - a >= 0){
             coins -= a;
             return true;
+
         }else {
             return false;
         }
