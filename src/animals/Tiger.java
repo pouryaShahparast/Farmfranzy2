@@ -1,9 +1,6 @@
 package animals;
 
 
-import model.GameFieldStorage;
-import model.commodities.Commodity;
-
 import java.util.HashSet;
 import java.util.Random;
 
@@ -78,7 +75,7 @@ public class Tiger extends WildAnimal{
 
     private void normalAttackDomesticatedAnimals(){
         HashSet<DomesticatedAnimal> removedDomesticatedAnimals = new HashSet<>();
-        for (DomesticatedAnimal domesticatedAnimal : GameFieldStorage.domesticatedAnimalHashSet) {
+        for (DomesticatedAnimal domesticatedAnimal : GameF.domesticatedAnimalHashSet) {
             if((xCoordinate == domesticatedAnimal.getXCoordinate()) && (yCoordinate == domesticatedAnimal.getYCoordinate())){
                 removedDomesticatedAnimals.add(domesticatedAnimal);
             }
