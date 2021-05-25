@@ -2,7 +2,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regex {
-//
+
     //patterns
 
     Pattern pattern1;
@@ -55,7 +55,73 @@ public class Regex {
         pattern10 = Pattern.compile("\\s*(?i:truck)\\s*(?i:go)\\s*$");
         ////exit
         pattern11 = Pattern.compile("\\s*(?i:exit)\\s*$");
+//////////////////////////
+
+        if(matcher1.find())
+        {
+
+
+            if((matcher1.group(1).equalsIgnoreCase("cat")))
+            {
+              Cat.buyCat(coin);
+
+            }
+            if((matcher1.group(1).equalsIgnoreCase("buffalo")))
+            {
+               Buffalo.buyBuffalo(coin);
+
+            }
+
+            if((matcher1.group(1).equalsIgnoreCase("chicken")))
+            {
+               Chicken.buyChicken(coin);
+
+            }
+            if((matcher1.group(1).equalsIgnoreCase("turkey")))
+            {
+
+                 Turkey.turkeyBuy(coin);
+
+            }
+            if((matcher1.group(1).equalsIgnoreCase("dog")))
+            {
+
+                  Dog.dogBuy(coin);
+
+            }
+
+
+
+
+
+        }
+        if(matcher2.find())
+        {
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
+
+
+
+
 }

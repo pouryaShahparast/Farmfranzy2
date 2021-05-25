@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Bear extends model.animals.WildAnimal {
+public class Bear extends WildAnimal {
     public static final int BEAR_CAGES_NEEDED = 4;
     public static final int BEAR_SELL_PRICE = 400;
 

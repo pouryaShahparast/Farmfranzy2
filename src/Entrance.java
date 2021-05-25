@@ -52,6 +52,18 @@ import java.util.Scanner;
         //
 
         //start playing  Game
+        System.out.println("*****************Enter your commands here*****************");
+        String input="";
+        Regex regex=new Regex();
+        while(true)
+        {
+            input=scanner.nextLine();
+            regex.matcher(input);
+        }
+
+
+
+
 
         //
 
