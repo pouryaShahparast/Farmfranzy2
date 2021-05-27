@@ -3,6 +3,10 @@ import java.util.regex.Pattern;
 
 public class Regex {
 
+
+    Well well;
+    Coin coin;
+
     //patterns
 
     Pattern pattern1;
@@ -30,6 +34,16 @@ public class Regex {
     Matcher matcher9;
     Matcher matcher10;
     Matcher matcher11;
+public Regex() {
+    well=new Well();
+    coin=new Coin();
+
+
+
+
+}
+
+
 
 
     public void matcher(String input) {
@@ -98,7 +112,21 @@ public class Regex {
         if(matcher2.find())
         {
 
+            int x_coordinate=Integer.parseInt(matcher2.group(1));
+            int y_coordinate=Integer.parseInt(matcher2.group(2));
+            for (Commodity commodity :
+                    GameFieldStorage.commodityHashSet) {
 
+
+                if((commodity.getXCoordinate()==x_coordinate)&&(commodity.getYCoordinate()==y_coordinate))
+                {
+
+                  //todo
+
+                }
+
+
+            }
 
 
 
@@ -107,8 +135,23 @@ public class Regex {
 
         }
 
+        if(matcher3.find())
+        {
+
+          well.getWater();
 
 
+
+
+
+        }
+        if(matcher4.find())
+        {
+
+            Grass grass=well.makeGrass();
+
+
+        }
 
 
 
